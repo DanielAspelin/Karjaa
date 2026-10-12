@@ -55,5 +55,5 @@ const resources=section("linkit","Tietoa ja lähteitä","Luotettavaa lisätietoa
 const rg=element("div",{class:"grid"});
 for(const [title,url] of [["Museovirasto – Meidän Karjaa","https://www.museovirasto.fi/en/meidan-karjaa"],["Raaseporin kaupunki","https://www.raseborg.fi/fi/"],["Karjaa – Visit Raseborg","https://visitraseborg.fi/fi/nae-koe/kaupunginosat-kylat/karjaa/"]])rg.append(element("article",{class:"card"},[element("a",{href:url,target:"_blank",rel:"noopener noreferrer",text:title+" ↗"})]));resources.append(rg);
 const footer=element("footer"),fw=element("div",{class:"wrap foot"});
-fw.append(element("div",{},[element("h3",{text:"Karjaa"}),element("small",{text:"Itsenäinen Karjaa-aiheinen verkkosivusto · Ei Raaseporin kaupungin virallinen palvelu."})]),element("div",{},[element("p",{text:"Daniel Aspelin"}),element("a",{href:"https://github.com/DanielAspelin/Karjaa",text:"Lähdekoodi GitHubissa"})]));footer.append(fw);document.body.append(footer);
+fw.append(element("div",{},[element("h3",{text:"Karjaa"}),element("small",{text:"Itsenäinen Karjaa-aiheinen verkkosivusto · Ei Raaseporin kaupungin virallinen palvelu."})]),element("div",{},[element("p",{text:"Daniel Aspelin"})]));footer.append(fw);document.body.append(footer);
 })();
